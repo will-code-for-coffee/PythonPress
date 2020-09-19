@@ -10,6 +10,8 @@ A lightweight content management system to power business portals.
     - users can search post titles and content; filter posts by author and tags; sort posts by date
 - Products
     - Database table: products
+    - Default view shows ALL PRODUCTS tagged FEATURED, if any, then ALL OTHER PRODUCTS, sorted rating
+    - users can search product titles and descriptions; filter by type and features; sort by price and rating
 - Services
     - Database table: services
 - User portal
@@ -19,6 +21,7 @@ A lightweight content management system to power business portals.
         - view their active service tickets
         - view their cart and orders
         - view their blog posts and comments
+        - configure their payment and delivery settings
 - About
     - Details
     - Contact

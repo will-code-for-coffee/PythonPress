@@ -1,0 +1,46 @@
+/*
+
+*/
+/* The colors are defined in the primary css file (main.css) but are copied here for reference
+:root {
+    --color-alpha: rgb(255, 255, 255);
+    --color-beta: rgb(0, 0, 0);
+    --color-gamma: rgb(150, 0, 0);
+    --color-delta: rgb(34, 34, 34);
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Overall appearance */
+#contact {
+    margin: 0;
+    padding: 20px auto;
+    border-radius: 15px;
+    background-image: linear-gradient(var(--color-beta), var(--color-gamma));
+    color: var(--color-alpha);
+}
+.content-no-sidebar {
+    margin: 0;
+    padding: 20px;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+.contact-form-field {
+    margin: 0;
+    padding: 20px;
+    width: 30%;
+}
+.contact-form-field label {
+    margin: 0;
+    padding: 5px;
+}
+.contact-form-field input, select {
+    margin: 0;
+    padding: 0;
+}
+/*.contact-form-field survey {}*/
+/* Page Intro */
+
+/* Contact Form */

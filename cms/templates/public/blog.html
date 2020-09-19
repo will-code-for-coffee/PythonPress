@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block head %}
+    {% block subhead %}
+        <title>DOCS | Will Code For Coffee</title>
+    {% endblock %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/docs.css') }}">
+{% endblock %}
+{% block content %}
+    <div id="docs">
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <h1>Contents</h1>
+                <div class="sidebar-nav-link side-nav-tier-one">Technology</div>
+                    <div class="sidebar-nav-link side-nav-tier-two">Development</div>
+                    <div class="sidebar-nav-link side-nav-tier-two">Operations</div>
+                    <div class="sidebar-nav-link side-nav-tier-two">Security</div>
+                <div class="sidebar-nav-link side-nav-tier-one">Gnosticism</div>
+                <div class="sidebar-nav-link side-nav-tier-one">Music</div>
+                <div class="sidebar-nav-link side-nav-tier-one">Miscellany</div>
+                <div class="sidebar-nav-link side-nav-tier-one">Appendices</div>
+                <div class="sidebar-nav-link side-nav-tier-one">Further Reading</div>
+            </nav>
+        </aside>
+        <div class="heading">
+            {% block heading %}
+            {% endblock %}
+        </div>
+        <article class="focus">
+            {% block focus %}
+            {% endblock %}
+        </article>
+        <aside class="support">
+            {% block support %}
+            {% endblock %}
+        </aside>
+        <div class="footing">
+            {% block footing %}
+            {% endblock %}
+        </div>
+    </div>
+{% endblock %}

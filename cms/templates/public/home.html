@@ -1,0 +1,69 @@
+{% extends "layout.html" %} {% block head %}
+<title>HOME | Will Code For Coffee</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/landing.css') }}"> {% endblock %} {% block content %}
+<!-- above the fold -->
+<div class="hero">
+    <div class="hero-text">
+        <h1>PROGRAMMER</h1>
+        <h2><em>noun.</em> An organism that converts caffeine to code.</h2>
+
+    </div>
+</div>
+
+<!-- below the fold -->
+<div class="full-width-block" id="benefits-statement">
+    <p>The pandemic has forced the whole world to reconsider how we live, work, and go about our lives. Faced with unemployment as businesses across the world closed, millions of people began taking the plunge to start their own business. In the twenty-first
+        century, a successfuly business <em>needs</em> a digital presence.</p>
+    <p>Or, maybe you haven't started a business. Maybe you're a creative type seeking a new outlet or performance venue in this changing landscape. You don't have to give up your passion because the local music hall closed. Whether you want a digital gallery
+        for your paintings or a digital stage to perform for fans, there is a solution.</p>
+    <p>If you're a healthcare practitioner, you may require some new tools for data collection and analytics to power your research. Historically, that kind of power has only lived in expensive, on-premises data centers. The cloud has revolutionized this,
+        making high performance computing accessible to the small businesses who could benefit most from it.</p>
+    <p>Information security, data analysis, and process automation services complement cloud systems and web development offerings to provide a one-stop, affordable resource for all your information technology needs.</p>
+</div>
+
+<div class="full-width-flex-container" id="portfolio-and-service">
+    <div class="flex-cell">
+        <img src="{{ url_for('static', filename='img/development.png') }}" alt="Web Development">
+        <h2>Web Development</h2>
+        <ul>
+            <li>Static websites, blogs, e-commerce portals, and content management systems</li>
+            <li>Accessibility and responsive web design</li>
+            <li>Search engine optimization and social media integration</li>
+        </ul>
+    </div>
+    <div class="flex-cell">
+        <img src="{{ url_for('static', filename='img/security.png') }}" alt="Cloud Systems">
+        <h2>Cloud Systems</h2>
+        <ul>
+            <li>Solutions built for and managed in Microsoft Azure</li>
+            <li>Scale your technology to fit your needs and your budget</li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="flex-cell">
+        <img src="{{ url_for('static', filename='img/operations.png') }}" alt="Analysis">
+        <h2>Analytics</h2>
+        <ul>
+            <li>Solutions Architecture</li>
+            <li>Cyber Security</li>
+            <li>Data Modeling</li>
+            <li>Automation</li>
+        </ul>
+    </div>
+</div>
+
+<div class="full-width-flex-container" id="trust-indicators-social-media">
+    <div class="flex-cell">
+        <a href="https://www.linkedin.com/in/robby-emslie" target="_blank"><img class="sm-logo" src="{{ url_for('static', filename='img/linkedin-logo_1400x350.png') }}" alt="LinkedIn"></a>
+    </div>
+    <div class="flex-cell">
+        <a href="https://www.twitter.com/codes_4_coffee" target="_blank"><img class="sm-logo" src="{{ url_for('static', filename='img/twitter_logo_2100x790.png') }}" alt="Twitter"></a>
+    </div>
+    <div class="flex-cell">
+        <a href="https://www.github.com/will-code-for-coffee" target="_blank"><img class="sm-logo" src="{{ url_for('static', filename='img/github_logo_2000x665.png') }}" alt="GitHub"></a>
+    </div>
+    <div class="flex-cell">
+        <a href="https://stackoverflow.com/users/14131549/robby" target="_blank"><img class="sm-logo" src="{{ url_for('static', filename='img/Stack_Overflow_Logo_5000x2021.png') }}" alt="StackOverflow"></a>
+    </div>
+</div>
+{% endblock %}

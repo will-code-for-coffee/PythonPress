@@ -1,0 +1,103 @@
+/*****************************************
+    WILL-CODE-FOR-COFFEE.INFO
+
+    NAME:   landing.css
+    DESC:   extended styles for home.html
+
+            view-port width > 700px
+
+    will.code.for.coffee@outlook.com
+
+*****************************************/
+
+/*
+<!-- above the fold -->
+            <!--
+
+                        HEADER/HERO IMAGE IN BG
+                
+                         [  H E A D L I N E  ]
+
+                    [    S U B H E A D L I N E    ]
+
+                      [ PRIMARY CALL  TO ACTION ]
+                      
+            -->
+*/
+/* the hero section */
+.hero {
+    margin: -15px -15px 10px;
+    padding: 100px;
+    height: 70vh;
+    background-color: black;
+    color: #FFFFFF;
+    background-image: url("../img/caffeine_to_code_function_machine-darkgray.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-content: start;
+}
+.hero-text {
+    text-shadow: 2px 2px rgb(34, 34, 34);
+}
+
+/* below the fold */
+/*
+    [   B E N E F I T S   S T A T E M E N T   ]
+
+    [| PORTFOLIO | |    AND    | |  SERVICE  |]
+    [|    1fr    | |    1fr    | |    1fr    |]
+
+    [     T R U S T   I N D I C A T O R S     ]
+    [ Customer Testimonials & Success Stories ]
+
+    [     T R U S T   I N D I C A T O R S     ]
+    [ Social Proofs (LinkedIn, Twitter, etc.) ]
+*/
+#benefits-statement {
+    font-family: monospace;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.full-width-block {
+    margin: 0 auto;
+    padding: 20px;
+    width: 80vw;
+    text-align: justify;
+}
+.full-width-flex-container {
+    margin: 0 auto;
+    padding: 20px;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.flex-cell {
+    margin: 0 auto;
+    padding: 5px;
+    max-width: 30%;
+    flex-grow: 1;
+    text-align: center;
+}
+.flex-cell ul {
+    margin: 0;
+    padding: 0;
+}
+.flex-cell ul li {
+    list-style-type: none;
+}
+.sm-logo {
+    max-width: 150px;
+    height: auto;
+}
+
+/* responsive elements */
+@media screen and (max-width: 700px) {
+    .full-width-flex-container {
+        flex-direction: column;
+    }
+}

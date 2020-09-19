@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% block head %}
+    <title>Will Code For Coffee</title>
+    {% endblock %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <header id="header">
+            <div class="header-logo">will-code-for-coffee.info</div>
+            <div class="nav-link"><a href="{{ url_for('home') }}">Home</a></div>
+            <div class="nav-link"><a href="{{ url_for('products') }}">Products</a></div>
+            <div class="nav-link"><a href="{{ url_for('services') }}">Services</a></div>
+            <div class="nav-link"><a href="{{ url_for('blog') }}">Blog</a></div>
+            <div class="nav-link"><a href="{{ url_for('about') }}">About</a></div>
+            <div class="nav-link"><a href="{{ url_for('admin_dashboard') }}">Account</a></div>
+        </header>
+    </div>
+    <!-- Main content-->
+    <div id="main-content" class="container">
+        {% block content %} {% endblock %}
+    </div>
+    <!-- Footer -->
+    <div class="container">
+        <footer>
+            <div class="footer-cell">
+                <h5>More Info</h5>
+                <ul>
+                    <li>Frequently Asked Questions</li>
+                    <li>Privacy Policy</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-cell">
+                <h5>Latest Updates</h5>
+                <p>A list of the latest updates to the website will populate here. Need to have SQLite data populated first.</p>
+                <!--
+                        <ul>
+                        {% for item in newsItems %}
+                            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+                        {% endfor %}
+                        </u>
+                    -->
+            </div>
+            <div class="footer-cell">
+                <h5>Newsletter</h5>
+                <form class="footer-form" name="newsletter-signup">
+                    <label for="yname">Your Name:</label><br>
+                    <input type="text" id="yname" name="yname" placeholder="Preferred Name (optional)"><br>
+                    <label for="ymail">Your E-Mail:</label><br>
+                    <input type="text" id="ymail" name="ymail" placeholder="you@example.com (required)" required></br>
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+        </footer>
+        <div class="copyright">
+            <p>Copyleft &copy; 2020 will-code-for-coffee.info</p>
+        </div>
+    </div>
+</body>
+
+</html>

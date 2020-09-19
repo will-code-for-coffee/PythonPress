@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+{% block head %}
+    <title>CONTACT | Will Code For Coffee</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/survey.css') }}">
+{% endblock %}
+{% block content %}
+    <div id="contact">
+        <section class="page-greeting">
+            <h1>Contact</h1>
+            <p><strong><em>Note:</em></strong> This will eventually be built out to include a live chat function.</p>
+            <p>Whether you are a reader, an existing client, a prospective client, or a recruiter/HR representative with a job offer, you can use this form to reach out to me and let me know how to get back in touch with you.</p>
+        </section>
+        <section class="content-no-sidebar">
+            <form id="contact-me" class="contact-form" name="contact-me" action="/">
+                <div class="contact-form-field">
+                    <label for="contact-name">Name:</label><br>
+                    <input type="text" id="contact-name" name="contact-name" placeholder="Your Name" required>
+                </div>
+                <div class="contact-form-field">
+                    <label for="contact-company">Company:</label><br>
+                    <input type="text" id="contact-company" name="contact-company" placeholder="Your Company">
+                </div>
+                <div class="contact-form-field">
+                    <label for="contact-email">E-Mail:</label><br>
+                    <input type="email" id="contact-email" name="contact-email" placeholder="you@example.org" required>
+                </div>
+                <div class="contact-form-field">
+                    <label for="contact-phone">Phone:</label><br>
+                    <input type="tel" id="contact-phone" name="contact-phone" placeholder="+1-222-333-4444">
+                </div>
+                <div class="contact-form-field">
+                    <label for="contact-website">Website:</label><br>
+                    <input type="url" id="contact-website" name="contact-website" placeholder="www.your-awesome-website.com">
+                </div>
+                <div class="contact-form-field">
+                    <label for="">Other Contact Method:</label><br>
+                    <input type="text" id="contact-other-method" name="contact-other-method" placeholder="ex. '@yourHandle - Twitter'">
+                </div>
+                <div class="contact-form-field">
+                    <label for="contact-subject">Subject:</label><br>
+                    <select name="contact-subject" id="contact-subject">
+                        <optgroup label="Existing Customers">
+                            <option value="ec-submit-ticket">Report an issue</option>
+                            <option value="ec-request-meeting">Schedule a meeting</option>
+                            <option value="ec-general-questions">General questions</option>
+                        </optgroup>
+                        <optgroup label="New Customers">
+                            <option value="nc-get-started">Get started</option>
+                            <option value="nc-more-info">Get more info</option>
+                        </optgroup>
+                        <optgroup label="Website Related">
+                            <option value="ws-submit-content">Submit content</option>
+                            <option value="ws-submit-correction">Propose a correction</option>
+                            <option value="ws-request-new">Request something new</option>
+                            <option value="ws-general-questions">General questions</option>
+                            <option value="ws-concerns">I'm concerned about...</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="contact-form-field">
+                    <fieldset>
+                        <legend>Preferred Contact Method:</legend>
+                        <input type="radio" name="contact-preferred" id="email" value="email">
+                        <label for="email">E-Mail</label>
+                        <input type="radio" name="contact-preferred" id="phone" value="phone">
+                        <label for="phone">Phone call</label>
+                        <input type="radio" name="contact-preferred" id="text" value="text">
+                        <label for="text">Text message</label>
+                    </fieldset>
+                </div>
+                <div class="contact-form-field">
+                    <fieldset>
+                        <legend>Preferred Contact Times:</legend>
+                        <input type="checkbox" name="contact-time" id="weekdays" value="weekdays">
+                        <label for="weekdays">Weekdays</label>
+                        <input type="checkbox" name="contact-time" id="weekends" value="weekends">
+                        <label for="weekends">Weekends</label>
+                        <br>
+                        <input type="checkbox" name="contact-time" id="morning" value="morning">
+                        <label for="mornings">Morning</label>
+                        <input type="checkbox" name="contact-time" id="afternoon" value="afternoon">
+                        <label for="afternoon">Afternoon</label>
+                        <input type="checkbox" name="contact-time" id="evening" value="evening">
+                        <label for="evening">Evening</label>
+                    </fieldset>
+                </div>
+            </form>
+        </section>
+    </div>
+{% endblock %}

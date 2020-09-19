@@ -1,0 +1,117 @@
+/***********************************
+    WILL-CODE-FOR-COFFEE.INFO
+    
+    NAME:   main.css
+    DESC:   layout and color styling
+    
+    will.code.for.coffee@outlook.com
+
+***********************************/
+:root {
+    --color-alpha: rgb(255, 255, 255);
+    --color-beta: rgb(0, 0, 0);
+    --color-gamma: rgb(150, 0, 0);
+    --color-delta: rgb(34, 34, 34);
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+/* top-level containers */
+.container {
+    margin: 0px;
+    padding: 15px;
+}
+#main-content {
+    min-height: 80vh;
+}
+a:link, a:visited, a:active {
+    color: var(--color-gamma);
+}
+a:hover {
+    color: var(--color-beta);
+}
+.construction-note, .code-block {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--color-beta);
+    font-family: monospace;
+    color: rgb(0, 255, 0);
+    text-align: left;
+}
+.page-greeting {
+    margin: 0px;
+    padding: 20px;
+}
+/* header elements */
+header {
+    margin: -15px;
+    padding: 10px;
+    font-weight: 700;
+    background-color: var(--color-gamma);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header-logo {
+    color: var(--color-alpha);
+    font-family: monospace;
+    flex-grow: 6;
+    font-size: 1.5em;
+    align-self: baseline;
+}
+.nav-link {
+    flex-grow: 1;
+    align-self: baseline;
+    height: 100%;
+}
+header a {
+    height: 100%;
+}
+header a:link, header a:visited, header a:active {
+    color: var(--color-alpha);
+}
+header  a:hover {
+    color: var(--color-beta);
+}
+/* footer elements */
+footer {
+    margin: 0 -15px;
+    padding: 10px;
+    background-color: var(--color-delta);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer-cell {
+    flex-grow: 1;
+    text-align: center;
+    max-width: 30%;
+    color: var(--color-alpha);
+}
+.footer-cell ul {
+    margin: 0;
+    padding: 2px;
+}
+.footer-cell ul li {
+    list-style-type: none;
+}
+.footer-cell form {
+    text-align: left;
+}
+.copyright {
+    margin: 0 -15px -15px;
+    padding: 10px;
+    background-color: var(--color-gamma);
+    color: var(--color-alpha);
+    text-align: center;
+    font-family: monospace;
+    font-size: 0.8em;
+}
+/* responsive elements */
+@media screen and (max-width: 700px) {
+    header, footer {
+        flex-direction: column;
+    }
+}
