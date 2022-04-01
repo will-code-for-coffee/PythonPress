@@ -1,6 +1,12 @@
- # PythonPress
+> **On Hiatus**
+> This project, while still in development, is moving along much slower than initially anticipated. As this is a "pet project" that had to be prioritized below a handful of other commitments and responsibilities I have, so it has taken a back seat since the initial planning was undertaken almost a year ago. I hope to have the alpha version completed by the end of 2021, but I can't make any promises or commitments to a release date at this point.
+> I apologize for any inconvenience. If you are interested in contributing to the project, please reach out to me at [will.code.for.coffee@outlook.com](mailto:will.code.for.coffee@outlook.com) with "PythonPress" in the subject line.
+> Thank you!
+> -- Dead Bat
 
-A dynamic content-management system written in Python, inspired by WordPress and SharePoint. PythonPress is still in its early stages, and is expected to remain in development through the rest of 2020. 
+# PythonPress
+
+A dynamic content-management system written in Python, inspired by WordPress and SharePoint. PythonPress is still in its early stages and development has slowed considerably due to "life" but this repo will receive updates from time to time. 
 
 ## Project Goals
 
@@ -12,17 +18,3 @@ A dynamic content-management system written in Python, inspired by WordPress and
   * Mimicking the WordPress database schema lays a foundation for future cross-compatibility features.
   * Using a compatible database schema will make it easy to port plugins from WordPress to PythonPress.
   * Eventually, we want to transition from SQL to Microsoft Azure CosmosDB.
-
-## User Accounts
-
-For users, we aim to collect the following details. Those marked with an asterisk* are required.
-
-Name*
-Company
-E-mail*
-Phone
-Mailing Address
-City
-State/Province/Territory
-Country* (drop-down)
-AccountType* (one or more of: reader, client^, author^, work-together^, admin^ - those with a ^ need to be approved by admin)
