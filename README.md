@@ -1,8 +1,5 @@
-> **On Hiatus**
-> This project, while still in development, is moving along much slower than initially anticipated. As this is a "pet project" that had to be prioritized below a handful of other commitments and responsibilities I have, so it has taken a back seat since the initial planning was undertaken almost a year ago. I hope to have the alpha version completed by the end of 2021, but I can't make any promises or commitments to a release date at this point.
-> I apologize for any inconvenience. If you are interested in contributing to the project, please reach out to me at [will.code.for.coffee@outlook.com](mailto:will.code.for.coffee@outlook.com) with "PythonPress" in the subject line.
-> Thank you!
-> -- Dead Bat
+> **On Hiatus**  
+> This project, while still in development, is moving along much slower than initially anticipated. As this is a "pet project" that had to be prioritized below a handful of other commitments and responsibilities I have, so it has taken a back seat since the initial planning was undertaken almost a year ago. I hope to have the alpha version completed by the end of 2021, but I can't make any promises or commitments to a release date at this point. I apologize for any inconvenience. If you are interested in contributing to the project, please reach out to me at [will.code.for.coffee@outlook.com](mailto:will.code.for.coffee@outlook.com) with "PythonPress" in the subject line. Thank you! -- Dead Bat
 
 # PythonPress
 
